@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boxes {
+    height: 40%;
+    width: 25%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    color: rgb(16, 140, 16);
+}
+
+h2 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-1,
+.box-2,
+.box-3 {
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    background-color: #f2f2f2;
+}
+
+.box-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discountValue p {
+    font: 20px;
+    font-weight: 800;
+}
+
+.sizeColor {
+    margin-top: 25px;
+    display: flex;
+    margin-left: 20px;
+}
+
+.colourEle,
+.size {
+    padding: 16px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.options {
+    margin: 5px 0px;
+}
+
+.srNumber {
+    padding: 5px 20px;
+    font-size: 16px;
+}
+
+.colour {
+    padding: 6px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.discountValue span {
+    color: #00cecb;
+}
+
+#discountedValue {
+    color: grey;
+    padding-left: 30px;
+}
+
+.shipping {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dayShipping p {
+    color: rgb(65, 159, 65)
+}
+
+button {
+    padding: 15px;
+    color: white;
+    background-color: #00cecb;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.active {
+    background-color: rgb(185, 238, 185);
+    border: 2px solid #00cecb;
+}
+
+.auther {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* mediaQuery */
+/*  Mobile */
+@media (max-width: 480px) {
+    .boxes {
+        height: 50%;
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .boxes {
+        height: 50%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (max-width : 1200px) {
+    .boxes {
+        height: 40%;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
